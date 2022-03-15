@@ -1,0 +1,18 @@
+.body-artikel{
+  /* background-color: rgb(37, 37, 98); */
+  background: rgb(37, 37, 98);
+}
+.Card-Detail{
+  margin-top: 20px;
+  width: 18rem;
+  background-color: rgba(163, 163, 163, 0.089) !important;
+  border-radius: 25px !important;
+}
+.img-card{
+  height: 200px;
+  width: 200px !important;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  border-radius:25px !important;
+}

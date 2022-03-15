@@ -1,14 +1,12 @@
-import { Row, Col, Container } from "react-bootstrap";
-import React, { Fragment } from "react";
+import { Row, Col } from "react-bootstrap";
+import React from "react";
 import "./Register.css";
-import { IoChevronBackSharp } from "react-icons/io5";
-import { FormControl } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
-    <div>
+    <div className='body'>
       <Row className='body-register'>
         <Col md={5} className='left-col'>
           <div className='pembungkus-image-left'>
@@ -16,18 +14,12 @@ const Register = () => {
           </div>
         </Col>
         <Col className='right-col'>
-          <h4 className='h-4'>
-            <IoChevronBackSharp
-              className='icon'
-              style={{
-                top: "15px",
-                right: "15px",
-              }}
-              size='40px'
-              color='rgb(182, 112, 0)'
-            />
-            Kembali
-          </h4>
+          <Link to='/'>
+            <h4 className='h-4'>
+              <i class='fa-solid fa-chevron-left'></i>
+              &ensp; Kembali
+            </h4>
+          </Link>
           <div className='main-register'>
             <div className='pembungkus-input'>
               <div className='teks-Register'>

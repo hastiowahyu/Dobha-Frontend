@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fredoka+One&family=Quicksand:wght@700&display=swap');
 
+.body{
+   background-color: rgb(37, 37, 98);
+}
 .left-col{
   height: 100% !important;
   display: flex;
@@ -36,7 +39,9 @@
 }
 .h-4{
   color: rgb(182, 112, 0);
-  float: left;  
+  float: left;
+  display: flex; 
+  align-items: center; 
 }
 .pembungkus-image-left {
   display: flex;
@@ -97,4 +102,7 @@
   box-sizing: border-box;
   height: 50px;
   border-radius: 10px;
+}
+.fa-chevron-left {
+  font-size: 25px;
 }

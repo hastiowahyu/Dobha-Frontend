@@ -1,15 +1,12 @@
 import { Row, Col, Container } from "react-bootstrap";
 import React, { Fragment } from "react";
 import "./Register.css";
-import { IoChevronBackSharp } from "react-icons/io5";
-import { FormControl } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Register from "./Register";
 import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div>
+    <div className='body'>
       {" "}
       <>
         <Row className='body-register'>
@@ -22,16 +19,8 @@ const Login = () => {
           {/* kanan */}
           <Col className='right-col'>
             <h4 className='h-4'>
-              <IoChevronBackSharp
-                className='icon'
-                style={{
-                  top: "15px",
-                  right: "15px",
-                }}
-                size='40px'
-                color='rgb(182, 112, 0)'
-              />
-              Kembali
+              <i class='fa-solid fa-chevron-left'></i>
+              &ensp; Kembali
             </h4>
             <Container className='main-register'>
               <div className='pembungkus-input'>
@@ -53,7 +42,7 @@ const Login = () => {
                   <input type='text' className='input-res' placeholder='Password' />
                 </div>
                 <div className='btn-p'>
-                  <Button className='Button-Login'>Register</Button>
+                  <Button className='Button-Login'>Log In</Button>
                   <p>Lupa Password?</p>
                 </div>
               </div>
