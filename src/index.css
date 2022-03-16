@@ -3,13 +3,13 @@
  font-family: 'League Spartan',sans-serif;
  font-size: large;
  color: white;
+
 }
 body {
   margin: 0;
-
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
+  -moz-osx-font-smoothing: grayscale; 
+  background-color: rgb(32, 32, 80) !important;
 }
 
 code {
