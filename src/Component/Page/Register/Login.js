@@ -1,10 +1,13 @@
 import { Row, Col, Container } from "react-bootstrap";
 import React, { Fragment } from "react";
-import "./Register.css";
+import "./Login.css";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Login = () => {
+  const [showPassword, SetshowPassword] = useState(false);
+
   return (
     <div className='body'>
       {" "}
@@ -39,11 +42,16 @@ const Login = () => {
                 </div>
                 <div className='input-text'>
                   <p>Masukkan Password:</p>
-                  <input type='text' className='input-res' placeholder='Password' />
+                  <input type={showPassword ? "text" : "password"} className='from-control input-res' placeholder='Password' id='number' />
+                  <button className='Button-show-password' onClick={() => SetshowPassword(!showPassword)}>
+                    {showPassword ? <i className='fa-solid fa-eye-slash' /> : <i className='fa-solid fa-eye' />}
+                  </button>
                 </div>
                 <div className='btn-p'>
                   <Button className='Button-Login'>Log In</Button>
-                  <p>Lupa Password?</p>
+                  <p>
+                    <a href='/'>Lupa Password?</a>
+                  </p>
                 </div>
               </div>
             </Container>

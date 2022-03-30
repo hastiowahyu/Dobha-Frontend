@@ -42,6 +42,7 @@
   float: left;
   display: flex; 
   align-items: center; 
+  margin-left: 35px;
 }
 .pembungkus-image-left {
   display: flex;
@@ -70,6 +71,12 @@
   background-color: rgb(182, 112, 0) !important;
   width: 120px;
   border-radius: 10px !important;
+}
+.Button-show-password{
+  background-color: transparent;
+  outline: none;
+  margin-left: -3rem;
+  border: none;
 }
 .btn-p{
   margin-top: 30px;
@@ -105,4 +112,20 @@
 }
 .fa-chevron-left {
   font-size: 25px;
+}
+
+.fa-solid{
+  color: rgb(182, 112, 0);
+}
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+.Button-Login-Register{
+  margin-top: 30px;
+  width: 120px;
+  border-radius: 10px;
+  height: 54px;
+  background-color: rgb(182, 112, 0)
 }

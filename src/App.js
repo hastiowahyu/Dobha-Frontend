@@ -9,14 +9,14 @@ import Navbarnya from "./Component/Header/Navbar";
 function App() {
   return (
     <div className='App'>
-      <Navbarnya />
-      {/* <Routes>
+      {/* <Navbarnya /> */}
+      <Routes>
         <Route exact path='/' element={<Register />} />
         <Route path='/login' element={<Login/>} />
         <Route path="/back" element={<Register/>}/>
       </Routes>
-      <Footer/> */}
-    <DetailArtikel></DetailArtikel>
+      {/* <Footer/>
+    <DetailArtikel></DetailArtikel> */}
     </div>
   );
 }
